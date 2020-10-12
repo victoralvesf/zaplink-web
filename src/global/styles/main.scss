@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 
 :root {
+  --primary: #00bfa5;
   --bg-color: rgba(245, 246, 247, 0.5);
   --white: #fff;
   --green: #48bb78;
   --red: #f56565;
+  --df-f-color: #556473;
   --df-border: 1px solid #eee;
   --df-shadow: 0 4px 20px #e1e1e1;
   --df-b-radius: 3px;
@@ -43,10 +45,7 @@ img {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: var(--df-f-color);
   display: flex;
   flex-direction: column;
-  width: min(1366px, 90%);
-  margin: 0 auto;
 }

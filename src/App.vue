@@ -1,24 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/dashboard">Dashboard</router-link> |
-      <router-link to="/login">Login</router-link>
-    </div>
+    <Navbar />
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#nav {
-  padding: 30px;
+<script>
+import Navbar from '@/components/Navbar'
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  components: {
+    Navbar
   }
 }
-</style>
+</script>

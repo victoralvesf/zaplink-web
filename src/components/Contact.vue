@@ -1,7 +1,7 @@
 <template>
   <li>
     <div class="contact">
-      <img src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" alt="Avatar">
+      <img src="../assets/avatar.png" alt="Avatar">
       <div class="info">
         <h3 :title="data.name">{{ data.name }}</h3>
         <span>{{ data.phone }}</span>
@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   li {
     display: flex;
     flex-direction: column;
